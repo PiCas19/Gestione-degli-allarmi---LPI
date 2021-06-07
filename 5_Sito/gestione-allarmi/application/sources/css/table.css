@@ -1,0 +1,46 @@
+#last_check{
+	width:18%;
+}
+
+#duration{
+	width:15%;
+}
+
+
+
+/* Stile sui schermi con larghezze massime di 760px (schermi di mobile)*/
+@media screen and (max-width: 760px) {
+
+
+	#last_check{
+		width:100%;
+	}
+
+	#duration{
+		width:100%;
+	}
+
+
+	/* Forza la tabella a non essere più come le tabelle (nasconde la tabella versione desktop) */
+	.responsive-table   thead, .responsive-table  tbody, .responsive-table  th, .responsive-table  td, .responsive-table  tr {
+	  display: block;
+	}
+
+	.responsive-table  tbody td{
+		word-wrap: break-word;
+	}
+
+	/* Nascondi l'intestazioni della tabella */
+	.responsive-table  thead tr{
+	  display: none;
+	}
+	/* Stile di ogni tr*/
+	.responsive-table   tr {
+		border: 1px solid #ccc;
+		padding-bottom: 4px;
+	}
+
+
+
+
+}
